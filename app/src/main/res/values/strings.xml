@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">multi_activity</string>
+    <string name="welocome">welcome</string>
+    <string name="textedit1">textEdit1</string>
+    <string name="textedit2">textEdit2</string>
+    <string name="textedit3">textEdit3</string>
+    <string name="nextActivity">Next activity</string>
+    <string name="wait">please wait</string>
+</resources>
