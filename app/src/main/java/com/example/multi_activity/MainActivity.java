@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         EditText editText1 = findViewById(R.id.text1);
         EditText editText2 = findViewById(R.id.text2);
         EditText editText3 = findViewById(R.id.text3);
-        String message = editText1.getText().toString() + " " + editText2.getText().toString() + " " + editText3.getText().toString();
+        String message = "The missile knows no limit";
         intent.putExtra(MSG,message);
         startActivity(intent);
     }

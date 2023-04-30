@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.MediaController;
 import android.widget.TextView;
+import android.widget.VideoView;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -14,8 +16,14 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.MSG);
-        TextView textView = findViewById(R.id.activity2text);
+        TextView textView = findViewById(R.id.text1);
         textView.setText(message);
+        VideoView missile = findViewById(R.id.video);
+        missile.setVideoPath("android.resource://" + getPackageName() + "/" + R.raw.missile);
+        MediaController mc = new MediaController(this);
+        missile.setMediaController(mc);
+        missile.start();
+
     }
 
 }
